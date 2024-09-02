@@ -9,13 +9,13 @@
         <h1 id="title">God Eater 2 Rage Burst Survey</h1>
         <p id="description">A short survey about God Eater 2 Rage Burst</p>
         <form id="survey-form" method="post" action="Somewhre.com">
-            <fieldset>
-                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Ex. Jona Smith" class="txt" required></label>
-                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="jonasmith@email.com" class="txt" required></label>
-                <label for="number" id="number-label">Age: <input type="number" id="number" min="13" max="150" placeholder="99" class="txt"></label>
+            <fieldset class="space-above">
+                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Ex. Jona Smith" class="text-box" required></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="jonasmith@email.com" class="text-box" required></label>
+                <label for="number" id="number-label">Age: <input type="number" id="number" min="13" max="150" placeholder="99" class="text-box"></label>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="space-above">
                 <legend>What is your prefered melee weapon?</legend>
                 <select id="dropdown" name="melee">
                     <option value="">Select</option>
@@ -27,21 +27,24 @@
                     <option value="Scythe">Variant Scythe</option>
                 </select>
             </fieldset>
-            <fieldset class="check-input">
+            <fieldset class="check-input space-above">
                 <legend>What is your prefered gun?</legend>
                 <label for="sniper-gun"><input type="radio" name="gun-type" id="sniper-gun" value="sniper-gun" checked> Sniper Gun</label>
                 <label for="assault-gun"><input type="radio" name="gun-type" id="assault-gun" value="assault-gun"> Assault Gun</label>
                 <label for="blast-gun"><input type="radio" name="gun-type" id="blast-gun" value="blast-gun"> Blast Gun</label>
                 <label for="shotgun"><input type="radio" name="gun-type" id="shotgun" value="shotgun"> ShotGun</label>
             </fieldset> 
-            <fieldset class="check-input">
+            <fieldset class="check-input space-above">
                 <legend>Select your favorite God Eaters in the blood unit?</legend>
-                <label for="julius"><input type="checkbox" id="julius" value="julius"> Julius</label>
-                <label for="nana"><input type="checkbox" id="nana" value="nana"> Nana</label>
-                <label for="romeo"><input type="checkbox" id="romeo" value="romeo"> Romeo</label>
-                <label for="gilbert"><input type="checkbox" id="gilbert" value="gilbert"> Gilbert</label>
-                <label for="ciel"><input type="checkbox" id="ciel" value="ciel"> Ciel</label>
-                <label for="god-eater">What do you like about this/these character(s)?<textarea id="god-eater" placeholder="Julius outfits are really cool..." rows="4" class="txt"></textarea></label>
+                
+                    <label for="julius"><input type="checkbox" id="julius" value="julius"> Julius</label>
+                    <label for="nana"><input type="checkbox" id="nana" value="nana"> Nana</label>
+                    <label for="romeo"><input type="checkbox" id="romeo" value="romeo"> Romeo</label>
+                    <label for="gilbert"><input type="checkbox" id="gilbert" value="gilbert"> Gilbert</label>
+                    <label for="ciel"><input type="checkbox" id="ciel" value="ciel"> Ciel</label>
+                <span class="space-above">
+                    <label for="god-eater">What do you like about this/these character(s)?<textarea id="god-eater" placeholder="Julius outfits are really cool..." rows="4" class="text-box"></textarea></label>
+                </span>
             </fieldset>
             <input type="submit" value="submit" id="submit">
         </form>
